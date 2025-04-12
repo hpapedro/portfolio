@@ -1,0 +1,31 @@
+* {
+	font-family: 'Montserrat', Arial;
+}
+
+.meu-nome{
+    text-align: center;
+    font-size: 50px;
+}
+
+.topicos ul {
+    list-style: none; /*Tirar as bolas da lista*/
+    padding: 10;
+    display: flex; /* flex para deixar lado a lado */
+    gap: 20%; /* Espaço entre os itens */
+    justify-content: center;
+  }
+  
+.topicos a {
+    color: green; 
+    text-decoration: none; /*Continua o link porém tira o sublinhado*/
+    font-size: 25px;
+  }
+
+  .topicos a:hover {
+    color: #ea00ff; /* muda a cor quando passa o mouse */
+    text-decoration: underline; /* opcional: adiciona sublinhado no hover */
+  }
+  
+
+
+
