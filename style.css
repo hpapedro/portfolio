@@ -2,30 +2,84 @@
 	font-family: 'Montserrat', Arial;
 }
 
+html {
+  scroll-behavior: smooth; /*ATIVAR O PARA QUE POSSAR LEVAR ATE A PAGINA*/
+}
+
+body{
+  background-color: rgb(218, 218, 218);
+}
+
 .meu-nome{
     text-align: center;
     font-size: 50px;
+
 }
 
 .topicos ul {
-    list-style: none; /*Tirar as bolas da lista*/
+    list-style: none; /*TIRAS AS BOLINHAS DAS LISTAS*/
     padding: 10;
-    display: flex; /* flex para deixar lado a lado */
-    gap: 20%; /* Espaço entre os itens */
+    display: flex; /* UM DO LADO DO OUTRO */
+    gap: 20%; /* ESPAÇAR OS TOPICOS*/
     justify-content: center;
   }
   
 .topicos a {
     color: green; 
-    text-decoration: none; /*Continua o link porém tira o sublinhado*/
+    text-decoration: none; /*SEM SUBLINHADO*/
     font-size: 25px;
   }
 
   .topicos a:hover {
-    color: #ea00ff; /* muda a cor quando passa o mouse */
-    text-decoration: underline; /* opcional: adiciona sublinhado no hover */
+    color: #ea00ff; /* MUDAR A COR*/
   }
   
+  .sobre-mim{
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 5%;
+  }
+  
+  .minha-foto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    /* MUDAR A FORMA*/
+    border: 3px solid green; /*BORDA*/
+  } 
 
+  .texto-sobre {
+    max-width: 500px;
+  }
+
+  #toggle-dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Modo escuro ativado */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Estilize outros elementos se quiser */
+  body.dark-mode a {
+    color: #90ee90;
+  }
+  
+  body.dark-mode .projeto {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+
+  
 
 
